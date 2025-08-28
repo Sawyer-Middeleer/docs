@@ -1,0 +1,36 @@
+img:not([src$="/images/app-icon-white.png"]):not([src$="/images/app-icon-black.png"]) {
+  border-radius: 16px !important;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #888888;
+  box-shadow: 0 0 32px rgba(0, 166, 244, 0.12) !important;
+}
+
+/* Tool buttons list */
+.tool-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.tool-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #0069a8;
+  color: #0069a8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-button:hover {
+  background-color: #0069a8;
+  color: white;
+  box-shadow: 0 4px 18px rgba(0, 105, 168, 0.25);
+}

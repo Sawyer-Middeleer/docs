@@ -1,4 +1,25 @@
 ---
 title: "Claude"
 description: "Configure BrowserAI tools in Claude"
+icon: "asterisk"
 ---
+
+Adding MCP tools to Claude is straightforward.
+
+Before beginning note that custom MCP tools are only accessible to paid Claude users. MCP tools can be added to both the Claude web app and Claude Desktop.
+
+## 1. add your tool to Claude
+
+Go to the Connectors menu and select "Add custom connector". Next, enter the tool `Name` and `URL` from BrowseAI into Claude's connector interface.
+
+![Claude add custom connector](/images/ai-tools/claude-add-custom-connector.png)
+
+## 2. Enable your tool in chat by selecting it...
+
+Open Claude's "Search and tools" chat menu and....
+
+![Claude select custom connector](/images/ai-tools/claude.png)
+
+## 3. Describe what you want Claude to do
+
+Prompt Claude to use your tool with natural language. If the tool is available, Claude will use it behind the scenes to fetch or update info.

@@ -1,17 +1,33 @@
 ---
 title: "AI MCP Tools"
 description: "Managed authentication in BrowserAI"
-icon: "bolt"
+icon: "waypoints"
 ---
 
-We automatically turn all completed automations into AI tools by generating endpoints.
+BrowseAI automatically turns completed automations into reusable tools by generating callable endpoints.
 
-**Claude**
+## Integrating your tool with AI agents
 
-**ChatGPT**
+Guides for connecting your MCP tools built in BrowserAI with popular MCP clients and AI agent frameworks.
 
-**n8n**
+<Columns cols={3}>
+  <Card title="ChatGPT" icon="message-circle" href="/ai-tools/chatgpt">
+    Configure BrowserAI tools in ChatGPT.
+  </Card>
+  <Card title="Claude" icon="asterisk" href="/ai-tools/claude">
+    Configure BrowserAI tools in Claude.
+  </Card>
+  <Card title="n8n" icon="workflow" href="/ai-tools/n8n">
+    Configure BrowserAI tools in n8n.
+  </Card>
+  <Card title="LangChain" icon="link" href="/ai-tools/langchain">
+    Configure BrowserAI tools in LangChain.
+  </Card>
+  <Card title="CrewAI" icon="users" href="/ai-tools/crewai">
+    Configure BrowserAI tools in CrewAI.
+  </Card>
+</Columns>
 
-**LangChain**
+## Using your tool via API call
 
-**CrewAI**
+You can also trigger tools built in BrowseAI by sending a `POST` request to ....

@@ -7,6 +7,9 @@
     "light": "#74d4ff",
     "dark": "#0069a8"
   },
+  "icons": {
+    "library": "lucide"
+  },
   "favicon": "/images/app-icon-white.png",
   "navigation": {
     "tabs": [
@@ -29,7 +32,7 @@
             ]
           },
           {
-            "group": "Using Browser Integrations",
+            "group": "Using Browser Automations",
             "pages": [
               "ai-tools/chatgpt",
               "ai-tools/claude",
@@ -41,9 +44,7 @@
           {
             "group": "Best practices",
             "pages": [
-              "best-practices/automating-applications",
-              "best-practices/credential-management",
-              "best-practices/using-ai-tools"
+              "best-practices/automating-applications"
             ]
           }
         ]

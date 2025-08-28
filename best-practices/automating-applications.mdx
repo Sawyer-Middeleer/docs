@@ -2,3 +2,48 @@
 title: "Automating applications"
 description: "Best practices for automating web apps using BrowserAI"
 ---
+
+Follow these best practices for best results building reliable browser automation flows.
+
+## 1. Choose the right use cases
+
+The most successful applications for BrowseAI are apps that do not already have robust open APIs, and do not employ bot blockers.
+
+These use cases will typically fall into one of 5 categories
+
+1. Legacy tools with no integration infrastructure
+2. Platforms with highly customized workflows and data models (CRM, ERPs, etc)
+3. platforms that restrict APIs for curated partner marketplaces
+4. Startups that haven't built out integrations yet
+5. Fully custom software solutions
+
+<Note>
+  We recommend against trying to automate consumer apps, such as social media
+  sites. These tend to employ very sophisticated bot blockers.
+</Note>
+
+## 2. Break down automation flows into atomic steps
+
+### Do this
+
+Break flows into single-step actions
+
+<Check>1. Take action: "open the accounts tab"</Check>
+
+<Check>2. Take action: "select the account matching @input_account"</Check>
+
+### Not this
+
+Trying to do multiple things at once, or providing ambiguous instructions
+
+<Danger>
+  Take action: "open the accounts tab and select the right company name"
+</Danger>
+
+## 3. Keep credentials secure
+
+Use BrowserAI's built-in [authentication](/features/authentication) management system. Do not enter private credentials directly into the flow configuration interface.
+
+## 4. Test before deploying at scale
+
+Run your flow with a range of inputs to make sure you have all of your edge cases covered before integrating into a fully automated sytem.
